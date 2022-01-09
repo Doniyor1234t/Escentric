@@ -1,0 +1,664 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.page__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.page__column {
+  background: rgba(0, 104, 184, 0.1);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.page__cntainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__body {
+  padding: 128px 115px 0px 0;
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page__title {
+  font-family: "Freight";
+  font-weight: 300;
+  font-size: 110px;
+  letter-spacing: 102%;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.page__text {
+  width: 344px;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 167%;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 48px 0;
+}
+
+.page__button {
+  margin: 0px 0px 142px 0px;
+}
+
+.page__link {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 32px;
+  border: 0.8px solid rgba(0, 0, 0, 0.9);
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.page__link:hover {
+  color: #fff;
+  background: #000;
+}
+
+.page__net {
+  font-family: "icons";
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px 30px 0px 0px;
+  padding: 0 0 50px 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.page__net:hover {
+  color: black;
+}
+
+@media (min-width: 767px) {
+  .page__image {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 52%;
+            flex: 0 0 52%;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  .page__image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.page__image img {
+  max-width: 100%;
+}
+
+.net {
+  font-family: "icons";
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px 30px 0px 0px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.net:hover {
+  color: #000;
+}
+
+.page__escentric {
+  padding: 80px 0px 80px 0;
+}
+
+.escentric__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.escentric__escentric {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.escentric__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.escentric__column {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.escentric__column:nth-child(2) {
+  margin: 0 20px;
+}
+
+.escentric__column:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.17);
+          box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.17);
+}
+
+.escentric__image {
+  position: relative;
+}
+
+.escentric__add {
+  font-size: 35px;
+  font-weight: 900;
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.escentric__text {
+  text-align: center;
+  margin: 19px 0px;
+}
+
+.escentric__user {
+  font-family: "Aktiv";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.escentric__title {
+  font-family: "Freight";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 11px 0 15px 0;
+}
+
+.escentric__cost {
+  font-family: "Aktiv";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+}
+
+.escentric__button {
+  margin: 50px 0 0 0;
+}
+
+._button {
+  margin: 68px 0 0 0;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.9);
+  padding: 16px 32px;
+  border: 0.8px solid rgba(0, 0, 0, 0.9);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.button:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+._escentric {
+  font-family: "Freight";
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.page__about {
+  background: rgba(0, 104, 184, 0.1);
+  padding: 85px 0 75px 0;
+}
+
+.about__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__text {
+  margin: 28px 0 42px 0;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 167%;
+  color: rgba(0, 0, 0, 0.9);
+  max-width: 840px;
+  text-align: center;
+}
+
+.text {
+  max-width: 364px;
+}
+
+.page__subscribe {
+  background: rgba(0, 104, 184, 0.1);
+  padding: 85px 0 75px 0;
+}
+
+.subscribe__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe__title {
+  font-family: "Freight";
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.subscribe__text {
+  max-width: 364px;
+  margin: 18px 0 40px 0;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.subscribe__input {
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.subscribe__inputinput {
+  background: rgba(0, 104, 184, 0.1);
+  border: none;
+  outline: none;
+  padding: 0;
+  float: left;
+}
+
+.subscribe__link {
+  margin: 35px 0 0 0;
+}
+
+.footer__container {
+  padding: 97px 0 52px 0;
+}
+
+.footer__rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__row:nth-child(2) {
+  content: "";
+}
+
+.footer__text {
+  max-width: 266px;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0px 0px 120px 0px;
+}
+
+.footer__address {
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.footer__title {
+  margin: 0px 0px 30px 0px;
+  font-family: "Aktiv";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.menu__links {
+  display: block;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+.menu__links:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.header {
+  min-height: 100%;
+  margin: 35px 0px;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__icon {
+  margin: 0px 222px 0px 0px;
+}
+
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list li:not(:last-child) {
+  margin: 0px 60px 0px 0px;
+}
+
+.menu__link {
+  display: block;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  z-index: 4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #0162ac;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu__link:hover::after {
+  width: 100%;
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon__item:not(:last-child) {
+  margin: 0px 30px 0px 0px;
+}
+
+.icon__item:first-child:hover > .icon__input {
+  width: 150px;
+}
+
+.icon__input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  float: left;
+  line-height: 24px;
+  color: #000;
+  width: 0;
+  font-family: "Aktiv";
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.bag {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.bag img:first-child {
+  position: absolute;
+  top: 7.06px;
+  left: 8.1px;
+}
+
+.bag img:last-child {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bag__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 24px;
+  height: 24px;
+}
+
+.bag__contact img {
+  margin: 1px auto 2px;
+}
+
+/** Generated by FG **/
+@font-face {
+  font-family: 'Aktiv';
+  src: url("../fonts/AktivGroteskCorp-Bold.eot");
+  src: local("☺"), url("../fonts/AktivGroteskCorp-Bold.woff") format("woff"), url("../fonts/AktivGroteskCorp-Bold.ttf") format("truetype"), url("../fonts/AktivGroteskCorp-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url("../fonts/AktivGroteskCorp-Light.eot");
+  src: local("☺"), url("../fonts/AktivGroteskCorp-Light.woff") format("woff"), url("../fonts/AktivGroteskCorp-Light.ttf") format("truetype"), url("../fonts/AktivGroteskCorp-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aktiv';
+  src: url("../fonts/AktivGroteskCorp-Medium.eot");
+  src: local("☺"), url("../fonts/AktivGroteskCorp-Medium.woff") format("woff"), url("../fonts/AktivGroteskCorp-Medium.ttf") format("truetype"), url("../fonts/AktivGroteskCorp-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Freight';
+  src: url("../fonts/FreightSans Light.eot");
+  src: local("☺"), url("../fonts/FreightSans Light.woff") format("woff"), url("../fonts/FreightSans Light.ttf") format("truetype"), url("../fonts/FreightSans Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+[class*="__container"] {
+  max-width: 1180px;
+  margin: 0px auto;
+}
